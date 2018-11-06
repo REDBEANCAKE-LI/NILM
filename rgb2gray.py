@@ -9,7 +9,7 @@ PATH = 'image_' #path
 for dirIndex in range(1,IMGNUM+1):  ###!!!pay attention to naming rules
     #create new directory
     dirCur = PATH + '%d'%dirIndex
-    dirCur_new = dirCur + '_gray'
+    dirCur_new = PATH + 'gray_%d'%dirIndex
     os.mkdir(dirCur_new)
     
     #open images, convert rgb to gray and resave
