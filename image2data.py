@@ -10,8 +10,8 @@ PATH = 'image_gray_'    #path
 
 
 #initialize
-features = np.mat(np.zeros(IMGHEIGHT, dtype=np.int))    ###!!!pay attention to dtype: np.int
-labels = np.mat(np.zeros(1, dtype=np.int))
+features = np.mat(np.zeros(IMGHEIGHT, dtype=np.double))    ###!!!pay attention to dtype: np.uint8
+labels = np.mat(np.zeros(1, dtype=np.double))
 
 #add data
 for dirIndex in range(1,IMGNUM+1):   ###!!!pay attention to naming rules
